@@ -1,0 +1,10 @@
+name: yiqing-test
+
+docker_env:
+  image: grointelligence/worker
+
+entry_points:
+  main:
+    parameters:
+      model_input: {type: float, default: 0.1}
+    command: "python mlflowtest/train.py {model_input}"
