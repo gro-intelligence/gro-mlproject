@@ -1,6 +1,7 @@
 name: yiqing-test
 
 docker_env:
+  # this is a docker image on DockerHub that need to be accessed using credentials
   image: grointelligence/worker
 
 entry_points:
